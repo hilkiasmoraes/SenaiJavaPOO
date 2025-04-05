@@ -1,4 +1,5 @@
 import models.Carro;
+import models.ContaBancaria;
 import models.Fabricante;
 
 public class Main {
@@ -17,5 +18,12 @@ public class Main {
         System.out.println("Conceito de Polimorfismo ---------------------");
         Fabricante fabricante = new Fabricante();
         fabricante.veiculoDoAno();
+
+        System.out.println("Conceito de Encapsulamento -------------------");
+        ContaBancaria saldo = new ContaBancaria();
+        System.out.println(saldo.getSaldo());
+
+        saldo.depositar(357.55);
+        System.out.println(saldo.getSaldo());
     }
 }
