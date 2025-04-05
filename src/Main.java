@@ -1,4 +1,5 @@
 import models.Carro;
+import models.Fabricante;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +11,11 @@ public class Main {
         carro1.exibirInfo();
 
         System.out.println("Conceito de Abstração ------------------------");
-
         carro1.moverVeiculo();
+
+
+        System.out.println("Conceito de Polimorfismo ---------------------");
+        Fabricante fabricante = new Fabricante();
+        fabricante.veiculoDoAno();
     }
 }
